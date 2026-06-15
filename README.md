@@ -1,10 +1,3 @@
-# Buy The Dip
-
-This university project compares investing immediately in the S&P 500 with a
-simple strategy that holds cash until the market has fallen by 30%.
-
-The complete analysis, calculations, and plots are in `buythedip.ipynb`.
-
 ## Requirements
 
 - Python 3.11 or newer
@@ -30,12 +23,11 @@ python -m pip install -r requirements.txt
 jupyter lab buythedip.ipynb
 ```
 
-In JupyterLab, use **Kernel > Restart Kernel and Run All Cells** to reproduce
-the analysis. Run JupyterLab from the repository root so the notebook can find
-the CSV files in the `data` directory.
+Or:
 
-The notebook downloads S&P 500 prices from Yahoo Finance when it runs, so an
-internet connection is required.
+```powershell
+jupyter notebook buythedip.ipynb
+```
 
 ### macOS or Linux
 
@@ -45,4 +37,10 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 jupyter lab buythedip.ipynb
+```
+
+Or:
+
+```bash
+jupyter notebook buythedip.ipynb
 ```
